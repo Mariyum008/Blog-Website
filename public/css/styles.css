@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Navbar Customization */
+.navbar {
+    background-color: #003a5d; /* Navy blue background */
+    border-bottom: 2px solid #005f9e; /* Navy blue bottom border */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: #e63946; /* Magenta */
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 5rem;
+}
+
+.nav-link:hover {
+    color: #e63946; /*Magenta*/
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,0.5)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+h1, h6 {
+    margin: 0 0 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Uniform Button Styling */
+.btn {
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #004a6c, #005f9e); /* Navy blue gradient */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #003a5d, #004a8c); /* Darker navy blue gradient */
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #e63946, #d62839); /* Magenta gradient */
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #d62839, #c8102e); /* Darker magenta gradient */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px; /* Adjust padding for smaller screens if needed */
+    }
+}
